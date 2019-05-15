@@ -3,8 +3,10 @@
 
 #include "clang/Tooling/CommonOptionsParser.h"
 
+using namespace llvm;
+
 static cl::OptionCategory RacerOptCat("Static Analysis Options");
-static cl::extrahelp CommonHelp(CommonOptionsParser::HelpMessage);
+static cl::extrahelp CommonHelp(clang::tooling::CommonOptionsParser::HelpMessage);
 static cl::extrahelp MoreHelp("\nMore help text...");
 
 
